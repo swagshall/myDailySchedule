@@ -1,10 +1,37 @@
 // console.log("in script")
 
-
+//get curr date for header
 var currentTime=moment().format("dddd, MMMM Do, YYYY");
 $("#currentDay").text(currentTime);
 
 
+
+//change color based on hr
+var currHour=moment().hours();
+var hr= $('time-block');
+
+console.log(currHour)
+colorTime(currHour);
+
+function colorTime(currHour) {
+for(var i=0; i<24; i++){
+if(hr>currHour){
+    //change color to grey
+    $(this).css("color", "grey");
+}
+else if (hr<currHour){
+    //change color to red 
+    $(this).css("color", "red");
+}
+else if (hr=== currHour){
+    //change color to green
+    $(this).css("color", "green");
+}
+}
+}
+
+
+//save data via local storage
 var sv = $('saveBtn');
 
 sv.on('click', function (event) {
