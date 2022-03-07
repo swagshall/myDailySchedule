@@ -9,6 +9,7 @@ MIT
 
 # Link
  Here is a link to the depolyed app: https://swagshall.github.io/myDailySchedule/
+ For the code follow this link: https://github.com/swagshall/myDailySchedule
 
  # Contact 
 For any questions or comments I can be reached via GitHub or email
